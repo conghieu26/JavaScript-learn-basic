@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <button onclick="
+      clickButton('heads'); 
+    ">heads</button>
+
+    <button onclick=" 
+      clickButton('tails');
+    ">tails</button>
+
+    <p class="js-choice"></p>
+
+    <script>
+      function clickButton(element){
+        const text = document.querySelector('.js-choice');
+
+        if (element === 'heads') {
+            text.innerHTML = "You chose: heads";
+        } else if (element === 'tails') {       
+            text.innerHTML = "You chose: tails";
+        }
+      }
+    </script>
+  </body>
+</html>
