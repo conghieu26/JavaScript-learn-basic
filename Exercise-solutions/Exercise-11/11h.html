@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+
+  </head>
+  <body>
+    <script>
+
+      console.log(addOne([1, 2, 3]));
+      console.log(addOne([-2,-1, 0, 100]));
+
+      
+      function addOne(array){
+        let newArray = [];
+
+        for (let i = 0; i < array.length; i++){
+          let x = array[i];
+          newArray.push(x + 1)
+        }
+        return newArray;
+      }
+    </script>
+  </body>
+</html>

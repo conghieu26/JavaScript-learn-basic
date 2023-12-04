@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+
+  </head>
+  <body>
+    <script>
+      const array = [1, 20, 22, 24, 5]
+      console.log(arraySwap(array));
+      function arraySwap(array) {
+        const lastIndex = array.length - 1;
+        
+        const firsNnum = array[0];
+        const lastNum = array[lastIndex]; 
+
+        array[0] = lastNum;
+        array[lastIndex] = firsNnum;
+
+       
+        return array;
+      }
+    </script>
+  </body>
+</html>

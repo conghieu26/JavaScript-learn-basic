@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+
+  </head>
+  <body>
+    <script>
+      console.log(addNum([1, 2, 3], 2));
+      console.log(addNum([1, 2, 3], 3));
+      console.log(addNum([-2, -1, 0, 99], 2));
+
+      function addNum(array, num) {
+        let newArray = [];
+
+        for (let i = 0; i < array.length; i++) {
+          let currentNum = array[i];
+          newArray.push( currentNum + num);
+        }
+        return newArray;
+      }
+    </script>
+  </body>
+</html>
