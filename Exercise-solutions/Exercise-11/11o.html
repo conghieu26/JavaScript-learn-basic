@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+
+  </head>
+  <body>
+    <script>
+
+      const arrayString1 = ['hello','world','search','good'];
+      const arrayString2 = ['not','found'];
+      let index = -1;
+  
+        for (let i = 0; i < arrayString1.length; i++) {
+          if (arrayString1[i] === 'search') {
+            index = i;
+          }
+        }
+        console.log(index);
+
+        index = -1;
+        for (let x = 0; x < arrayString2.length; x++){
+          if (arrayString2[x] === 'search') {
+            index = x;
+          }
+        }
+        console.log(index);
+    </script>
+  </body>
+</html>
