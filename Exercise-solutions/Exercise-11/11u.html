@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+
+  </head>
+  <body>
+    <script>
+      const foods = ['egg','apple','egg','egg','ham'];
+      console.log(removeEgg(foods));
+      console.log(foods);
+
+
+      function removeEgg(foods) {
+        const foodsCopy = foods.slice();
+        const reversedFoods = foods.reverse();
+        const newArray = [];
+        let countEgg = 0;
+        for (let i = 0; i < reversedFoods.length; i++) {
+          if (foods[i] === 'egg' && countEgg < 2) {
+            countEgg++;
+            continue;
+          } 
+            newArray.push(foods[i]);
+        }
+        return newArray.reverse();
+      }
+    </script>
+  </body>
+</html>
