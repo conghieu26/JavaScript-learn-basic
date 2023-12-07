@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <button class="js-submit-button" onclick="updateButton()">Submit</button>
+    <script>
+     function updateButton(){
+      const changeText = document.querySelector('.js-submit-button');
+
+      setTimeout(
+        function(){
+          changeText.innerHTML = 'Loading...';
+        },0
+      )
+      
+      setTimeout(
+        function(){
+          changeText.innerHTML = 'Finished!'
+        }, 1000
+      )
+     }
+    </script>
+  </body>
+</html>
