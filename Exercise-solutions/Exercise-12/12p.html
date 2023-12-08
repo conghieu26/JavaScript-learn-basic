@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+
+    <button class="js-button" onclick="
+      updateButton();
+    ">Start</button>
+
+    <script>
+      function updateButton() {
+        const changeText = document.querySelector('.js-button');
+
+
+        setTimeout(() => {
+          changeText.innerHTML = 'Finished!';
+        }, 1000);
+      }
+    </script>
+  </body>
+</html>

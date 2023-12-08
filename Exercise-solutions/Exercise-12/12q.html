@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+
+    <button class="js-button">Submit</button>
+
+    <script>
+      document.querySelector('.js-button')
+        .addEventListener('click', () => {
+          const changeText = document.querySelector('.js-button');
+          console.log(changeText);
+
+          setTimeout(() => {
+            changeText.innerHTML = 'Finished!';
+          }, 1000);
+        });
+    </script>
+  </body>
+</html>
